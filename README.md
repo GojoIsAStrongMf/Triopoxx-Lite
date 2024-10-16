@@ -1,2 +1,4 @@
 # Triopoxx-Lite
-Revolutionary First Non Copied Web Proxy Created By TheSchoolerNetwork
+Code Written By Dominic
+Company: TheSchoolerNetwork
+for Site https://sites.google.com/view/TheSchoolerGamesRetake
