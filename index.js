@@ -3,7 +3,7 @@ const { createprooxuMiddleware } = require('http-proxy-middleware');
 
 const app = express();
 
-const src = 'https://mathsspot.com';
+const src = 'https://google.com';
 
 const prooxu = createprooxuMiddleware({
   target: src,
