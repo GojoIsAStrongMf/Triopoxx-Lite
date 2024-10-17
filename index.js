@@ -1,17 +1,17 @@
 const express = require('express');
-const { createprooxuMiddleware } = require('http-proxy-middleware');
+const { createproxyMiddleware } = require('http-proxy-middleware');
 
 const app = express();
 
 const src = 'https://google.com';
 
-const prooxu = createprooxuMiddleware({
+const prooxu = createproxyMiddleware({
   target: src,
   changeOrigin: true,
   secure: true,
   logLevel: 'debug',
   router: function(req) {
-    if (req.headers.host === 'mathsspot.com') {
+    if (req.headers.host === 'google.com') {
       req.headers['X-Forwarded-For'] = ''; 
       req.headers['X-Real-IP'] = '';
       req.headers['Via'] = '';
@@ -24,5 +24,5 @@ app.use('/', prooxu);
 
 const port = process.env.PORT || 443;
 app.listen(port, () => {
-  console.log(`idk ${port}`);
+  console.log(`Triopoxx is running on port ${port}`);
 });
