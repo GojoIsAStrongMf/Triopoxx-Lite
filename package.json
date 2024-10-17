@@ -4,8 +4,8 @@
     "http-proxy-middleware": "^2.0.6",
     "http-proxy": "^1.18.1"
   },
-  "name": "Triopoxx Lite",
-  "description": "(TEST)",
+  "name": "Triopoxxlite",
+  "description": "idk bruh",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -13,8 +13,9 @@
     
   },
   "keywords": [
-    "Triopoxx",
-    "TheSchoolerGamesRetake"
+    "TSG",
+    "TSGR"
   ],
   "author": "TheSchoolerNetwork",
+  "license": "ISC"
 }
