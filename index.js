@@ -1,11 +1,11 @@
 const express = require('express');
-const { createproxyMiddleware } = require('http-proxy-middleware');
+const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const app = express();
 
 const src = 'https://google.com';
 
-const prooxu = createproxyMiddleware({
+const proxy = createProxyMiddleware({
   target: src,
   changeOrigin: true,
   secure: true,
@@ -20,9 +20,9 @@ const prooxu = createproxyMiddleware({
   }
 });
 
-app.use('/', prooxu);
+app.use('/', proxy);
 
 const port = process.env.PORT || 443;
 app.listen(port, () => {
-  console.log(`Triopoxx is running on port ${port}`);
+  console.log(`CybriaGG is running on port ${port}`);
 });
