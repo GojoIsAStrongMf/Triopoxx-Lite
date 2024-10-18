@@ -4,13 +4,6 @@ body {
 	background: url("assets/spacebackground.png");
 }
 
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: black;
-}
 
 * {
 	box-sizing: border-box;
