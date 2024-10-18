@@ -1,35 +1,26 @@
-body { 
-  background: url("assets/spacebackground.png");
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+	background: url("assets/spacebackground.png");
 }
 
-li {
-  float: left;
-  border-right:1px solid #bbb;
+* {
+	box-sizing: border-box;
+	margin 0;
+	padding 0;
 }
 
-li:last-child {
-  border-right: none;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
+li, a, button {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
   text-decoration: none;
 }
 
-li a:hover:not(.active) {
-  background-color: #111;
-}
-
-.active {
-  background-color: #04AA6D;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
 }
