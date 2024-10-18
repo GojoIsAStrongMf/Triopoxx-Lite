@@ -6,8 +6,7 @@ const cluster = require('cluster');
 const numCPUs = require('os').cpus().length;
 
 if (cluster.isMaster) {
-  console.log(`Slave ${process.pid} is running`);
-
+//sigma
   for (let i = 0; i < numCPUs; i++) {
     cluster.fork();
   }
@@ -46,13 +45,5 @@ if (cluster.isMaster) {
   const PORT = 8080;
   server.listen(PORT, () => {
     console.log(`CybriaGG Slave ${process.pid} has been successfully run! On Port ${PORT}`);
-  });
-
-  process.on('unhandledRejection', (reason, promise) => {
-    console.error(`Slave ${process.pid} detected unhandled rejections:`, promise, 'reason:', reason);
-  });
-
-  process.on('uncaughtException', (err) => {
-    console.error(`Slave ${process.pid} uncaught exception:`, err);
   });
 }
